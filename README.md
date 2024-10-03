@@ -1,4 +1,5 @@
-<h1> Hi, my name is Jordon! </h1>
+<h1> Hi, my name is Jordon! I am a third year student at New Jersey Institute of Technology, studying Business/Information Systems and Information Technology. </h1>
+
 
 <h2> Here Are Data Analytics Projects That I worked On! </h2>
 
