@@ -7,3 +7,6 @@ https://github.com/jordonchau/Student-Performance-Factors
 
 Chocolate Factory Worker Tracker:
 https://github.com/jordonchau/Chocolate-Factory-Worker-Tracker/tree/main
+
+Covid-19 Vaccine Tracker
+https://github.com/jordonchau/Covid19-Vaccine-Tracker
