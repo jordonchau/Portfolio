@@ -2,6 +2,9 @@
 
 <h2> Here Are Data Analytics Projects That I worked On! </h2>
 
+J&J Chocolates Online:
+https://github.com/jordonchau/J-J-Chocolates-Online
+
 Student Performance Factor:
 https://github.com/jordonchau/Student-Performance-Factors
 
