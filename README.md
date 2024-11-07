@@ -4,8 +4,6 @@
 <h3>
   I am a third year student at New Jersey Institute of Technology, studying Business/Information Systems and Information Technology. I’m an aspiring data analyst with hands-on experience in SQL, Tableau, Power BI, Excel, and Python, and I am passionate about leveraging data to drive business decisions. 
 
-<img src= "https://github.com/user-attachments/assets/4abd62cc-36d0-4a4d-9cd8-299f777b633a" width="300" height="400"/>  </h3>
-
 <h2> Here Are Data Analytics Projects That I worked On! </h2>
 <h3>
 
