@@ -8,21 +8,27 @@
 <h3>
 
 Healthline Report: (Python)
+
 https://github.com/jordonchau/Healthline-Report
 
 J&J Chocolates Online: (Excel)
+
 https://github.com/jordonchau/J-J-Chocolates-Online
 
 Student Performance Factor: (SQL, PowerBI)
+
 https://github.com/jordonchau/Student-Performance-Factors
 
 Toman Bikshare: (SQL)
+
 https://github.com/jordonchau/Toman-Bikeshare
 
 Chocolate Factory Worker Tracker: (PowerBI)
+
 https://github.com/jordonchau/Chocolate-Factory-Worker-Tracker/tree/main
 
 Covid-19 Vaccine Tracker (Tableau)
+
 https://github.com/jordonchau/Covid19-Vaccine-Tracker
 </h3>
 
