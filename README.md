@@ -2,7 +2,7 @@
 
 <h2>About Me</h2>  
 <h3>
-  I am a third year student at New Jersey Institute of Technology, studying Business/Information Systems and Information Technology. I’m an aspiring data analyst with hands-on experience in SQL, Tableau, Power BI, Excel, and Python, and I am passionate about leveraging data to drive business decisions. 
+  I am a fourth year student at New Jersey Institute of Technology, studying Business/Information Systems and Information Technology. I’m an aspiring data analyst with hands-on experience in SQL, Tableau, Power BI, Excel, and Python, and I am passionate about leveraging data to drive business decisions. 
 
 <h2> Here Are Data Analytics Projects That I worked On! </h2>
 <h3>
