@@ -7,6 +7,8 @@
 <h2> Here Are Data Analytics Projects That I worked On! </h2>
 <h3>
 
+Medical Insurance Cost/Charges: (Tableau)
+
 Healthline Report: (Python)
 
 https://github.com/jordonchau/Healthline-Report
