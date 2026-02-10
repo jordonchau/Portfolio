@@ -9,6 +9,8 @@
 
 Medical Insurance Cost/Charges: (Tableau)
 
+https://github.com/jordonchau/Medical-Insurance-Charges-/blob/main/README.md
+
 Healthline Report: (Python)
 
 https://github.com/jordonchau/Healthline-Report
