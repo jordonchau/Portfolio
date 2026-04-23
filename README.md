@@ -15,6 +15,9 @@ Healthline Report: (Python)
 
 https://github.com/jordonchau/Healthline-Report
 
+Joe Stone's Crab Sales Forcasting: (Excel)
+
+
 J&J Chocolates Online: (Excel)
 
 https://github.com/jordonchau/J-J-Chocolates-Online
