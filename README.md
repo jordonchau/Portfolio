@@ -19,7 +19,7 @@ J&J Chocolates Online: (Excel)
 
 https://github.com/jordonchau/J-J-Chocolates-Online
 
-Student Performance Factor: (SQL, PowerBI)
+Student Performance Factor: (Python, PowerBI)
 
 https://github.com/jordonchau/Student-Performance-Factors
 
