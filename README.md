@@ -7,6 +7,11 @@
 <h2> Here Are Data Analytics Projects That I worked On! </h2>
 <h3>
 
+
+Youtube Shorts Performance Prediction: (Python)
+
+https://github.com/jordonchau/Youtube-Shorts-Performance-Prediction
+
 Medical Insurance Cost/Charges: (Tableau)
 
 https://github.com/jordonchau/Medical-Insurance-Charges-/blob/main/README.md
