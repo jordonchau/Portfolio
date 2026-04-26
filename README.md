@@ -29,8 +29,10 @@ Healthline Report: (Python)
 
 https://github.com/jordonchau/Healthline-Report
 
-Joe Stone's Crab Sales Forcasting: <img width="30" height="30" alt="image" src="https://github.com/user-attachments/assets/8d6254e4-6b82-47a1-baed-cd11ec0120b5" />
-
+<p>
+  Joe Stone's Crab Sales Forcasting:
+  <img src="https://github.com/user-attachments/assets/8d6254e4-6b82-47a1-baed-cd11ec0120b5" width="30" height="30" />
+</p>
 
 https://github.com/jordonchau/Joe-Stones-Crab-Forecasting
 
