@@ -31,6 +31,7 @@ https://github.com/jordonchau/Healthline-Report
 
 Joe Stone's Crab Sales Forcasting: (Excel)
 
+https://github.com/jordonchau/Joe-Stones-Crab-Forecasting
 
 J&J Chocolates Online: (Excel)
 
