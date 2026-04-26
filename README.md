@@ -15,45 +15,60 @@ I’m currently seeking opportunities in data analytics, business intelligence, 
 <h3>
 
 
-
- Youtube Shorts Performance Prediction: (Python) 
-
+<h3>
+ Youtube Shorts Performance Prediction 
+ <img src="https://github.com/user-attachments/assets/519f9ded-2f54-460e-b9e2-4717894e0dff" width="25" align="center" />
+</h3>
 
 https://github.com/jordonchau/Youtube-Shorts-Performance-Prediction
 
-Medical Insurance Cost/Charges: (Tableau)
+<h3>
+Medical Insurance Cost/Charges 
+<img src="https://github.com/user-attachments/assets/355eca8f-e051-4242-88e7-2e2ffcfeb838" width="25" align="center" />
+</h3>
 
 https://github.com/jordonchau/Medical-Insurance-Charges-/blob/main/README.md
 
-Healthline Report: (Python)
+<h3>
+Healthline Report
+<img src="https://github.com/user-attachments/assets/519f9ded-2f54-460e-b9e2-4717894e0dff" width="25" align="center" />
+</h3>
 
 https://github.com/jordonchau/Healthline-Report
 
-<p>
-  Joe Stone's Crab Sales Forcasting:
-  <img src="https://github.com/user-attachments/assets/8d6254e4-6b82-47a1-baed-cd11ec0120b5" width="30" height="30" />
-</p>
+<h3>
+  Joe Stone's Crab Sales Forecasting
+  <img src="https://github.com/user-attachments/assets/8d6254e4-6b82-47a1-baed-cd11ec0120b5" width="25" align="center" />
+</h3>
 
 https://github.com/jordonchau/Joe-Stones-Crab-Forecasting
 
-J&J Chocolates Online: (Excel)
+<h3>
+  J&J Chocolates
+  <img src="https://github.com/user-attachments/assets/8d6254e4-6b82-47a1-baed-cd11ec0120b5" width="25" align="center" />
+</h3>
 
 https://github.com/jordonchau/J-J-Chocolates-Online
-
-Student Performance Factor: (Python, PowerBI)
-
+<h3>
+Student Performance Factor  <img src="https://github.com/user-attachments/assets/519f9ded-2f54-460e-b9e2-4717894e0dff" width="25" align="center" /> <img src="https://github.com/user-attachments/assets/b56e847e-3932-4920-9707-6b22f432133e" width="25" align="center" />
+</h3>
 https://github.com/jordonchau/Student-Performance-Factors
-
-Toman Bikshare: (SQL)
+<h3>
+Toman Bikshare <img src="https://github.com/user-attachments/assets/59120fca-e2f0-453f-a153-ea532affcd75" width="25" align="center" />
+</h3>
 
 https://github.com/jordonchau/Toman-Bikeshare
-
-Chocolate Factory Worker Tracker: (PowerBI)
+<h3>
+Chocolate Factory Worker Tracker 
+<img src="https://github.com/user-attachments/assets/b56e847e-3932-4920-9707-6b22f432133e" width="25" align="center" />
+</h3>
 
 https://github.com/jordonchau/Chocolate-Factory-Worker-Tracker/tree/main
 
-Covid-19 Vaccine Tracker (Tableau)
-
+<h3>
+Covid-19 Vaccine Tracker 
+<img src="https://github.com/user-attachments/assets/355eca8f-e051-4242-88e7-2e2ffcfeb838" width="25" align="center" />
+</h3>
 https://github.com/jordonchau/Covid19-Vaccine-Tracker
 </h3>
 
