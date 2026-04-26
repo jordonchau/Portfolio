@@ -1,6 +1,9 @@
 # 💫 About Me:
-Hi! My name is Jordon and I am a senior at New Jersey Institute of Technology, studying Business/Information Systems!<br>I am preparing to graduate in May of 2026 and am looking for a full time opportunity in data/business analytics and business intelligence!
+I’m a Business & Information Systems student at NJIT with a focus on data analytics and business intelligence. I enjoy turning raw data into clear insights through dashboards, reporting, and analysis.
 
+I have experience working with SQL, Python, Tableau, and Power BI to clean data, build KPI-driven dashboards, and support data-driven decision-making. Through my internship at Nissan Motor Corporation and various projects, I’ve developed a strong foundation in data validation, visualization, and communicating insights to non-technical stakeholders.
+
+I’m currently seeking opportunities in data analytics, business intelligence, and related roles where I can continue to grow and make an impact.
 
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/www.linkedin.com/in/jordon-chau) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:chau.jordon@gmail.com) 
@@ -12,7 +15,9 @@ Hi! My name is Jordon and I am a senior at New Jersey Institute of Technology, s
 <h3>
 
 
-Youtube Shorts Performance Prediction: (Python)
+
+ Youtube Shorts Performance Prediction: (Python) 
+
 
 https://github.com/jordonchau/Youtube-Shorts-Performance-Prediction
 
