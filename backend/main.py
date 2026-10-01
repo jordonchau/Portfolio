@@ -1,14 +1,20 @@
 import os
 from contextlib import asynccontextmanager
+from datetime import datetime
 
+import httpx
 from dotenv import load_dotenv
-from fastapi import FastAPI, HTTPException
+from fastapi import Depends, FastAPI, Header, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from psycopg.rows import dict_row
 from psycopg_pool import ConnectionPool
 from pydantic import BaseModel, Field
 
 load_dotenv()
+
+SUPABASE_URL = os.environ["SUPABASE_URL"]
+SUPABASE_KEY = os.environ["SUPABASE_PUBLISHABLE_KEY"]
+ADMIN_EMAIL = os.environ["ADMIN_EMAIL"].lower()
 
 pool = ConnectionPool(
     os.environ["DATABASE_URL"],
@@ -30,8 +36,31 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=os.getenv("ALLOWED_ORIGINS", "http://localhost:5173").split(","),
     allow_methods=["GET", "POST"],
-    allow_headers=["Content-Type"],
+    allow_headers=["Content-Type", "Authorization"],
 )
+
+
+# ---------- Auth ----------
+
+def require_admin(authorization: str | None = Header(default=None)):
+    """Ask Supabase who owns this login token, and only allow the admin email."""
+    if not authorization or not authorization.startswith("Bearer "):
+        raise HTTPException(status_code=401, detail="Not logged in")
+
+    token = authorization.removeprefix("Bearer ")
+    try:
+        res = httpx.get(
+            f"{SUPABASE_URL}/auth/v1/user",
+            headers={"Authorization": f"Bearer {token}", "apikey": SUPABASE_KEY},
+            timeout=5,
+        )
+    except httpx.HTTPError:
+        raise HTTPException(status_code=503, detail="Auth service unavailable")
+
+    if res.status_code != 200:
+        raise HTTPException(status_code=401, detail="Session expired, please log in again")
+    if res.json().get("email", "").lower() != ADMIN_EMAIL:
+        raise HTTPException(status_code=403, detail="Not authorized")
 
 
 # ---------- Projects ----------
@@ -93,7 +122,7 @@ class ContactIn(BaseModel):
 @app.post("/contact", status_code=201)
 def create_message(msg: ContactIn):
     if msg.website:
-        return {"status": "ok"}  # bot filled the hidden field, silently ignore
+        return {"status": "ok"}
 
     with pool.connection() as conn:
         conn.execute(
@@ -101,3 +130,21 @@ def create_message(msg: ContactIn):
             (msg.name.strip(), msg.email.strip(), msg.message.strip()),
         )
     return {"status": "ok"}
+
+
+# ---------- Admin ----------
+
+class Message(BaseModel):
+    id: int
+    name: str
+    email: str
+    message: str
+    created_at: datetime
+
+
+@app.get("/admin/messages", response_model=list[Message], dependencies=[Depends(require_admin)])
+def list_messages():
+    with pool.connection() as conn:
+        return conn.execute(
+            "select id, name, email, message, created_at from messages order by created_at desc"
+        ).fetchall()
