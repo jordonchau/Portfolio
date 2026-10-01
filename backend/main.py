@@ -6,7 +6,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from psycopg.rows import dict_row
 from psycopg_pool import ConnectionPool
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 load_dotenv()
 
@@ -29,10 +29,12 @@ app = FastAPI(title="Portfolio API", lifespan=lifespan)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=os.getenv("ALLOWED_ORIGINS", "http://localhost:5173").split(","),
-    allow_methods=["GET"],
-    allow_headers=["*"],
+    allow_methods=["GET", "POST"],
+    allow_headers=["Content-Type"],
 )
 
+
+# ---------- Projects ----------
 
 class Project(BaseModel):
     id: int
@@ -77,3 +79,25 @@ def get_project(slug: str):
     if row is None:
         raise HTTPException(status_code=404, detail="Project not found")
     return row
+
+
+# ---------- Contact ----------
+
+class ContactIn(BaseModel):
+    name: str = Field(min_length=1, max_length=100)
+    email: str = Field(max_length=200, pattern=r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
+    message: str = Field(min_length=10, max_length=5000)
+    website: str = ""  # hidden spam trap: real people leave it empty
+
+
+@app.post("/contact", status_code=201)
+def create_message(msg: ContactIn):
+    if msg.website:
+        return {"status": "ok"}  # bot filled the hidden field, silently ignore
+
+    with pool.connection() as conn:
+        conn.execute(
+            "insert into messages (name, email, message) values (%s, %s, %s)",
+            (msg.name.strip(), msg.email.strip(), msg.message.strip()),
+        )
+    return {"status": "ok"}
